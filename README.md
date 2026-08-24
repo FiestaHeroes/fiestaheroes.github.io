@@ -1,4 +1,4 @@
-# Fiesta Heroes
+# Fiesta Heroes - Website
 
 ![Fiesta Heroes](images/logo.png)
 
