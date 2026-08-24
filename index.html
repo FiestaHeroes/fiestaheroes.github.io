@@ -1,73 +1,81 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Fiesta Heroes</title>
+		<title>Fiesta Heroes | Open source Fiesta Online resources</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Open source resources for developing Fiesta Online servers." />
+		<link rel="stylesheet" href="assets/css/site.css" />
 	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
-					<h1><strong>Fiesta Heroes</strong>, Open source project for developing and maintaining "Fiesta Online" server file sets. While also documenting information and preserving assets.<br /></h1>
+	<body>
+		<div class="page-shell">
+			<aside class="site-sidebar">
+				<div class="sidebar-inner">
+					<p class="sidebar-kicker">Fiesta Heroes</p>
+					<p class="sidebar-description">Development, documentation, and preservation for the Fiesta Online community.</p>
 				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-				<!-- One -->
-				<section id="one">
-					<h1 align="center">
-						<br>
-						<img src="images/logo.png" width="50%">
-					  </h1>
-					  <p align="center">
-						<a href="#development">Development</a>  •
-						<a href="#documentation">Documentation</a> •
-						<a href="#preservation">Preservation</a>
-					  </p>
-					  <h2 id="development">Development</h2>
-					  <p>You may be wondering what this project is all about. It began when a group of individuals from the private server development community came together to form this project. Our goal is to provide the best foundation for creating your own server. We are dedicated to developing, maintaining, and fixing any retail or base content within our sets. Our platform offers a variety of sets to choose from, such as NA2016, CN2012, or even TW2008, allowing you to start developing your server immediately. Our team is dedicated to making this process as seamless as possible. Members of the community will no longer need to search various forums or Discord channels for fixes and updates. Instead, the community can report issues through our <a href="https://github.com/FiestaHeroes/">GitHub</a> or <a href="https://discord.gg/ujXva2uepW">Discord</a>, where we will do our best to address issues and create a stable base for everyone.</p>
-					  <h2 id="documentation">Documentation</h2>
-					  <p>In addition, we have created our own <a href="https://doc.fiestaheroes.com/">documentation</a> site, with the goal of providing a public and well-organized resource for guided development.</p>
-					  <h2 id="preservation">Preservation</h2>
-					  <p>Furthermore, we are also hosting our own <a href="https://archive.fiestaheroes.com/">archive</a>, where we store official content from over the years, such as images, articles, videos, clients, tools, and more.
-					  <br><br><br></p>
-					  <blockquote>
-						<p><strong>Regards,<br></strong>
-						We hope you enjoy our project and choose to support us. Wishing you all the best with your private server endeavors! ✌️</p>
-					  </blockquote>
-				</section>
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/FiestaHeroes/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://doc.fiestaheroes.com/" class="icon solid fa-book"><span class="label">Documentation</span></a></li>
-						<li><a href="https://archive.fiestaheroes.com/" class="icon regular fa-file-archive"><span class="label">Archive</span></a></li>
-						<li><a href="https://discord.gg/ujXva2uepW" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Copyright 2025</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+				<div class="sidebar-bottom">
+					<div class="sidebar-links" aria-label="Project links">
+						<a class="icon-button" href="https://github.com/FiestaHeroes/" aria-label="GitHub" title="GitHub"><span class="icon brands fa-github" aria-hidden="true"></span></a>
+						<a class="icon-button" href="https://doc.fiestaheroes.com/" aria-label="Documentation" title="Documentation"><span class="icon solid fa-book" aria-hidden="true"></span></a>
+						<a class="icon-button" href="https://archive.fiestaheroes.com/" aria-label="Archive" title="Archive"><span class="icon regular fa-file-archive" aria-hidden="true"></span></a>
+						<a class="icon-button" href="https://discord.gg/ujXva2uepW" aria-label="Discord" title="Discord"><span class="icon brands fa-discord" aria-hidden="true"></span></a>
+					</div>
+					<a class="sidebar-interview" href="/interview">Read the interview <span aria-hidden="true">&rarr;</span></a>
 				</div>
-			</footer>
+			</aside>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="site-content">
+				<header class="site-header">
+					<div class="header-actions">
+						<nav aria-label="Main navigation">
+							<a href="#development">Development</a>
+							<a href="#documentation">Documentation</a>
+							<a href="#preservation">Preservation</a>
+							<a href="/interview">Interview</a>
+						</nav>
+						<button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark mode" title="Use dark mode">
+							<span class="theme-icon icon solid fa-moon" aria-hidden="true"></span>
+							<span class="sr-only">Use dark mode</span>
+						</button>
+					</div>
+				</header>
 
+				<main id="top">
+					<section class="content-intro" aria-labelledby="page-title">
+						<img src="images/logo.png" alt="Fiesta Online" id="page-title" />
+					</section>
+
+					<section class="feature-grid" aria-label="Project areas">
+						<article class="feature-card feature-card-wide" id="development">
+							<div>
+								<h2>Development</h2>
+								<p>Fiesta Heroes began when a group of people who cared about the game joined together to provide a space for the community to come together. We develop, maintain, and fix retail and base content across sets including <strong>NA2016</strong>, <strong>CN2012</strong>, and <strong>TW2008</strong>, so you can start developing immediately.</p>
+								<p>Our team works to keep the process seamless. Report issues through our <a href="https://github.com/FiestaHeroes/">GitHub</a> or <a href="https://discord.gg/ujXva2uepW">Discord</a>; we do our best to address them and create a stable base.</p>
+							</div>
+						</article>
+
+						<article class="feature-card" id="documentation">
+							<h2>Documentation</h2>
+							<p>A public, organized resource for guided development.</p>
+							<a class="card-link" href="https://doc.fiestaheroes.com/">Documentation <span aria-hidden="true">&rarr;</span></a>
+						</article>
+
+						<article class="feature-card" id="preservation">
+							<h2>Preservation</h2>
+							<p>Our archive stores official content from over the years, including images, articles, videos, clients, tools, and more.</p>
+							<a class="card-link" href="https://archive.fiestaheroes.com/">Archive <span aria-hidden="true">&rarr;</span></a>
+						</article>
+					</section>
+
+					<blockquote class="closing-note">We hope you enjoy the project and find its tools, documentation, and archive useful.</blockquote>
+				</main>
+
+				<footer class="site-footer">
+					<p>&copy; <span id="current-year"></span> Fiesta Heroes</p>
+				</footer>
+			</div>
+		</div>
+		<script src="assets/js/theme.js" defer></script>
 	</body>
 </html>
