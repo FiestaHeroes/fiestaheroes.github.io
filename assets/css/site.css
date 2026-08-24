@@ -693,6 +693,27 @@ h2 {
 	border-collapse: collapse;
 }
 
+.interview-document table.interview-staff-table {
+	margin: 20px 0;
+	min-width: 60%;
+}
+
+.interview-document table.interview-staff-table th,
+.interview-document table.interview-staff-table td {
+	padding: 4px 32px 4px 0;
+	text-align: left;
+	font-weight: normal;
+}
+
+.interview-document table.interview-staff-table th {
+	font-weight: 600;
+	border-bottom: 1px solid var(--line);
+}
+
+.interview-document table.interview-staff-table tr:last-child td {
+	padding-bottom: 0;
+}
+
 .interview-document table img {
 	width: auto;
 	margin: 0;
@@ -919,6 +940,22 @@ h2 {
 	.interview-document table img {
 		max-width: 100%;
 		margin: 0 auto;
+	}
+
+	.interview-document table.interview-staff-table tr {
+		display: flex;
+	}
+
+	.interview-document table.interview-staff-table th,
+	.interview-document table.interview-staff-table td {
+		display: inline-block;
+		width: auto !important;
+		padding: 4px 0;
+	}
+
+	.interview-document table.interview-staff-table th:first-child,
+	.interview-document table.interview-staff-table td:first-child {
+		min-width: 46%;
 	}
 
 	.interview-document table.interview-image-pair tr:nth-child(2) {
