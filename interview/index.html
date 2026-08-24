@@ -1,48 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Interview with Shiomi Sawa | Fiesta Heroes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Fiesta Heroes interviews Shiomi Sawa, CEO of Hi-5 and publisher of Bright Kingdom." />
+		<link rel="stylesheet" href="../assets/css/site.css" />
+	</head>
+	<body class="interview-page">
+		<div class="page-shell">
+			<div class="site-content">
+				<header class="site-header">
+					<a class="interview-back" href="../index.html"><span aria-hidden="true">&larr;</span> Back to the project</a>
+					<div class="header-actions">
+						<nav aria-label="Main navigation">
+							<a href="../index.html#development">Development</a>
+							<a href="../index.html#documentation">Documentation</a>
+							<a href="../index.html#preservation">Preservation</a>
+							<a href="#top" aria-current="page">Interview</a>
+						</nav>
+						<button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark mode" title="Use dark mode">
+							<span class="theme-icon icon solid fa-moon" aria-hidden="true"></span>
+							<span class="sr-only">Use dark mode</span>
+						</button>
+					</div>
+				</header>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:"Liberation Serif";}
-@font-face
-	{font-family:"Liberation Sans";}
-@font-face
-	{font-family:"Noto Sans CJK SC";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Lohit Devanagari";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0in;
-	font-size:12.0pt;
-	font-family:"Liberation Serif",serif;}
-a:link, span.MsoHyperlink
-	{color:navy;
-	text-decoration:underline;}
-.MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Liberation Serif",serif;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:56.7pt 56.7pt 56.7pt 56.7pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+				<main id="top">
+					<section class="interview-hero" aria-labelledby="page-title">
+						<p class="eyebrow">Fiesta Heroes / Community interview</p>
+						<h1 id="page-title">Behind Bright Kingdom</h1>
+						<p class="interview-lede">A conversation with <strong>Shiomi Sawa</strong>, CEO of Hi-5 and publisher of Bright Kingdom, about OnsOn Soft, localization, and the work behind one of Fiesta's earliest worlds.</p>
+						<div class="interview-actions">
+							<a class="button button-primary" href="index.html" download="fiesta-heroes-interview.html"><span class="icon solid fa-download" aria-hidden="true"></span> Download interview</a>
+							<a class="text-link" href="#interview">Read the conversation <span aria-hidden="true">&darr;</span></a>
+						</div>
+						<div class="interview-hero-extension">
+							<div>
+								<p class="eyebrow">The full conversation</p>
+								<h2 id="interview-heading">Publishing, preservation, and play</h2>
+							</div>
+							<p>We reached out to Sawa by email to learn what happened behind the scenes while High5 published Bright Kingdom in Japan.</p>
+						</div>
+					</section>
 
-</head>
-
-<body lang=EN-US link=navy vlink="#954F72" style='word-wrap:break-word'>
-
-<div class=WordSection1>
+					<section class="interview-reading" id="interview" aria-labelledby="interview-heading">
+						<article class="interview-document">
+							<div class="WordSection1">
 
 <p class=MsoNormal style='text-align:justify'><b>Mr. Sionic, we would like to
 start by learning about your background. Do you come from a technical degree
@@ -1661,8 +1665,27 @@ video file does not exist. Because in 2006-7, the Japanese Internet was calling
 even VGA (640x480) size &quot;high quality&quot;, and we did not resourcefully
 edit the video with a Pixel Size larger than that!</p>
 
-</div>
+							</div>
+						</article>
+					</section>
+				</main>
 
-</body>
+				<footer class="site-footer">
+					<p>&copy; <span id="current-year"></span> Fiesta Heroes</p>
+				</footer>
+			</div>
+		</div>
+		<script src="../assets/js/theme.js" defer></script>
+		<script>
+			document.querySelectorAll('.interview-document p.MsoNormal').forEach(function (paragraph) {
+				var text = paragraph.textContent.replace(/\u00a0/g, ' ').trim();
 
+				if (!text && !paragraph.querySelector('img, table')) {
+					paragraph.remove();
+				} else if (paragraph.querySelector('b')) {
+					paragraph.classList.add('interview-question');
+				}
+			});
+		</script>
+	</body>
 </html>
