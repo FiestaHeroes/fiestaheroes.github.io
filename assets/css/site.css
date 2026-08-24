@@ -16,6 +16,7 @@
 	--sidebar-overlay: rgba(31, 24, 21, 0.58);
 	--sidebar-text: rgba(255, 255, 255, 0.72);
 	--sidebar-strong: #ffffff;
+	--sidebar-accent: #c4c0ff;
 	--shadow: 0 12px 30px rgba(31, 24, 21, 0.07);
 	--quote-bg: rgba(85, 78, 192, 0.1);
 }
@@ -210,6 +211,10 @@ a:focus-visible {
 	font-weight: 600;
 }
 
+.sidebar-interview:hover {
+	color: var(--sidebar-accent);
+}
+
 .sidebar-interview span {
 	display: inline-block;
 	margin-left: 8px;
@@ -236,6 +241,14 @@ a:focus-visible {
 	padding: 0 clamp(24px, 5vw, 72px);
 	border-bottom: 1px solid var(--line);
 	background: var(--header-surface);
+}
+
+.theme-toggle-floating {
+	position: fixed;
+	top: 24px;
+	right: clamp(24px, 5vw, 72px);
+	z-index: 10;
+	box-shadow: var(--shadow);
 }
 
 .header-actions {
@@ -285,6 +298,11 @@ nav a:hover {
 	color: var(--accent);
 }
 
+.theme-toggle:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 3px;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -306,13 +324,14 @@ main {
 
 .content-intro {
 	text-align: center;
-	margin-bottom: 24px;
+	padding-top: clamp(8px, 2.5vw, 24px);
+	margin-bottom: clamp(28px, 4vw, 52px);
 }
 
 .content-intro img {
 	display: block;
 	width: min(600px, 90%);
-	height: 165px;
+	height: clamp(150px, 15vw, 190px);
 	margin: 0 auto;
 	object-fit: contain;
 }
@@ -320,7 +339,7 @@ main {
 .feature-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 20px;
+	gap: clamp(16px, 1.5vw, 24px);
 }
 
 .feature-card {
@@ -372,7 +391,7 @@ h2 {
 }
 
 .closing-note {
-	margin: 24px 0 0;
+	margin: clamp(28px, 3vw, 42px) 0 0;
 	padding: 17px 22px;
 	border: 1px solid var(--accent);
 	border-left: 6px solid var(--accent);
@@ -699,11 +718,11 @@ h2 {
 	}
 
 	.content-intro {
-		margin-bottom: 14px;
+		margin-bottom: 24px;
 	}
 
 	.feature-grid {
-		gap: 14px;
+		gap: 16px;
 	}
 
 	.feature-card {
@@ -757,11 +776,15 @@ h2 {
 	}
 
 	.content-intro img {
-		max-height: 90px;
+		max-height: 110px;
 	}
 
 	.content-intro {
-		margin-bottom: 12px;
+		margin-bottom: 20px;
+	}
+
+	.feature-grid {
+		gap: 14px;
 	}
 
 	.feature-card {
@@ -820,6 +843,11 @@ h2 {
 		justify-content: flex-start;
 		min-height: 64px;
 		padding: 13px 24px;
+	}
+
+	.theme-toggle-floating {
+		top: 18px;
+		right: 18px;
 	}
 
 	.header-actions {
