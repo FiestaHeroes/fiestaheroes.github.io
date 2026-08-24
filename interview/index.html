@@ -759,7 +759,7 @@ means that those publishers did not like them very much.</p>
 <p class=MsoNormal style='text-align:justify'><span style='position:relative;
 z-index:2;left:-1px;top:0px;width:305px;height:171px'>
 
-<table cellpadding=0 cellspacing=0 align=left>
+<table class=interview-image-pair cellpadding=0 cellspacing=0 align=left>
  <tr>
   <td width=0 height=0></td>
   <td width=100></td>
@@ -1159,7 +1159,7 @@ as poster paper, as indicated in the lower right corner of the package.</p>
 
 <p class=MsoNormal style='text-align:justify'>
 
-<table cellpadding=0 cellspacing=0 align=left>
+<table class=interview-image-float cellpadding=0 cellspacing=0 align=left>
  <tr>
   <td width=196 height=0></td>
  </tr>
@@ -1332,7 +1332,7 @@ question without it. Thanks...</p>
 
 <p class=MsoNormal style='text-align:justify'>
 
-<table cellpadding=0 cellspacing=0 align=left>
+<table class=interview-image-float cellpadding=0 cellspacing=0 align=left>
  <tr>
   <td width=27 height=0></td>
  </tr>
@@ -1430,7 +1430,7 @@ playing Burakin together.</p>
 &quot;naked tie&quot; look, so I would be happy if this costume was implemented
 in Fiesta in other countries and
 
-<table cellpadding=0 cellspacing=0>
+<table class=interview-image-block cellpadding=0 cellspacing=0>
  <tr>
   <td width=180 height=0></td>
  </tr>
@@ -1677,7 +1677,11 @@ edit the video with a Pixel Size larger than that!</p>
 				if (!text && !paragraph.querySelector('img, table')) {
 					paragraph.remove();
 				} else if (paragraph.querySelector('b')) {
-					paragraph.classList.add('interview-question');
+					var question = document.createElement('h3');
+
+					question.className = 'interview-question';
+					question.innerHTML = paragraph.innerHTML;
+					paragraph.replaceWith(question);
 				}
 			});
 

@@ -632,7 +632,7 @@ h2 {
 	text-wrap: pretty;
 }
 
-.interview-document p.interview-question {
+.interview-document .interview-question {
 	position: relative;
 	counter-increment: interview-question;
 	margin-top: 3.1rem;
@@ -649,7 +649,7 @@ h2 {
 	box-shadow: 0 8px 20px rgba(31, 24, 21, 0.05);
 }
 
-.interview-document p.interview-question:before {
+.interview-document .interview-question:before {
 	display: block;
 	margin-bottom: 7px;
 	color: var(--accent-dark);
@@ -661,11 +661,11 @@ h2 {
 	text-transform: uppercase;
 }
 
-.interview-document p.interview-question:first-child {
+.interview-document .interview-question:first-child {
 	margin-top: 0;
 }
 
-.interview-document p.interview-question b {
+.interview-document .interview-question b {
 	font-weight: inherit;
 }
 
@@ -687,9 +687,15 @@ h2 {
 }
 
 .interview-document table {
+	width: auto;
 	max-width: 100%;
 	margin: 26px auto;
 	border-collapse: collapse;
+}
+
+.interview-document table img {
+	width: auto;
+	margin: 0;
 }
 
 .interview-document td {
@@ -887,6 +893,45 @@ h2 {
 		padding: 24px 18px;
 	}
 
+	.interview-document table {
+		display: block;
+		width: 100% !important;
+		table-layout: fixed;
+		float: none !important;
+	}
+
+	.interview-document table tbody,
+	.interview-document table tr {
+		display: block;
+		width: 100%;
+	}
+
+	.interview-document table td {
+		display: block;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.interview-document table td:empty {
+		display: none;
+	}
+
+	.interview-document table img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.interview-document table.interview-image-pair tr:nth-child(2) {
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.interview-document table.interview-image-pair tr:nth-child(2) td {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+
 	.interview-document:before {
 		margin-bottom: 24px;
 	}
@@ -1006,7 +1051,7 @@ h2 {
 		line-height: 1.5;
 	}
 
-	.interview-document p.interview-question {
+	.interview-document .interview-question {
 		break-inside: avoid;
 		page-break-inside: avoid;
 		border-color: #555555;
