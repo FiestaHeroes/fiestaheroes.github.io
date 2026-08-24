@@ -26,7 +26,7 @@
 						<h1 id="page-title">Behind Bright Kingdom</h1>
 						<p class="interview-lede">A conversation with <strong>Shiomi Sawa</strong>, CEO of Hi-5 and publisher of Bright Kingdom, about OnsOn Soft, localization, and the work behind one of Fiesta's earliest worlds.</p>
 						<div class="interview-actions">
-							<a class="button button-primary" href="index.html" download="fiesta-heroes-interview.html"><span class="icon solid fa-download" aria-hidden="true"></span> Download interview</a>
+							<button class="button button-primary print-button" type="button"><span class="icon solid fa-print" aria-hidden="true"></span> Print / save as PDF</button>
 							<a class="text-link" href="#interview">Read the conversation <span aria-hidden="true">&darr;</span></a>
 						</div>
 						<div class="interview-hero-extension">
@@ -1679,6 +1679,10 @@ edit the video with a Pixel Size larger than that!</p>
 				} else if (paragraph.querySelector('b')) {
 					paragraph.classList.add('interview-question');
 				}
+			});
+
+			document.querySelector('.print-button').addEventListener('click', function () {
+				window.print();
 			});
 		</script>
 	</body>
